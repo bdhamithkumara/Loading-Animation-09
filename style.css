@@ -1,0 +1,38 @@
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121213;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #4b9cdb;
+}
+/* animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite; */
+.load .square {
+  animation: loading 1.5s cubic-bezier(0.50, 0.50, 0.50, 0.50) infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(100px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+
+
+
+
+
